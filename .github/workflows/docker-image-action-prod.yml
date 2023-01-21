@@ -30,11 +30,11 @@ jobs:
         uses: docker/metadata-action@98669ae865ea3cffbcbaa878cf57c20bbf1c6c38
         with:
           images: |
-            xia1997x/ee20c-lia:prod
+            xia1997x/ee20c-lia:max-prod
       -
         name: Build and push
         uses: docker/build-push-action@v3
         with:
           context: .
           push: true
-          tags: xia1997x/ee20c-lia:prod
+          tags: xia1997x/ee20c-lia:max-prod
